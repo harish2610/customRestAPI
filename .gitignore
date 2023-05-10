@@ -1,0 +1,3 @@
+# Project exclude paths
+/camunda_rest_endpoint/target/
+/engine/target/

@@ -1,0 +1,24 @@
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      password: demo
+      first-name: Dan
+      last-name: Demo
+    filter:
+      create: All tasks
+
+spring:
+  datasource:
+    url: jdbc:h2:./camunda-h2-dbs/process-engine
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
+
+
+server:
+  port: 8080
